@@ -1,0 +1,72 @@
+
+
+.liste-categorie{
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.categorie {
+  display: flex;
+  border-radius: 2px;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.categorie h2{
+  font-size: 15px;
+  padding: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.sous-categorie{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.sous-categorie div:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 40%;
+  background-color: var(--second-color);
+  /* box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px; */
+}
+
+.sous-categorie div:nth-child(1) p{
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.sous-categorie div:nth-child(2){
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 60%;
+}
+
+.sous-categorie div:nth-child(2) p{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+
+  .liste-categorie{
+    grid-template-columns: 49% 49%;
+  }
+
+}

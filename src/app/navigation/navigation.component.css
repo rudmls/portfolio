@@ -1,0 +1,148 @@
+header {
+  position: fixed;
+  width: 100%;
+  min-height: 66px;
+  z-index: 600;
+}
+header .row {
+  position: relative;
+  min-height: 66px;
+}
+
+header .top-bar {
+  background-color: var(--third-color);
+  min-width: 220px;
+  min-height: 66px;
+  position: absolute;
+  left: 90px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+header .top-bar a  {
+  color: #FFF;
+}
+
+header .logo {
+  float: left;
+  margin-left: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+header .logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-shadow: none;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 15px;
+  /* background: url(logo.png) no-repeat center; */
+  background-size: 92px 15px;
+}
+
+.menu-toggle {
+  float: left;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switch {
+  background-color: var(--third-color);
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid var(--font-color);
+}
+
+.theme-switch rmx-icon {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* navigation panel */
+.main-nav-wrap {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.main-nav-wrap.active {
+  display: block;
+}
+
+/* dropdown nav */
+.main-navigation {
+  background-color: var(--third-color);
+  padding: 24px 30px 24px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: block;
+}
+
+
+.main-navigation > li {
+  display: block;
+  height: auto;
+  text-align: left;
+  padding: 0;
+}
+.main-navigation li a {
+  display: block;
+  color: var(--text-color);
+  width: auto;
+  padding: 15px 0;
+  line-height: 16px;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-navigation li a:hover {
+  color: #FFF;
+  padding-left: 1rem;
+}
+.main-navigation li.current > a {
+  background: none;
+  color: #FFF;
+}
+
+@media only screen and (max-width:1024px) {
+  header .top-bar {
+    left: 60px;
+  }
+}
+@media only screen and (max-width:768px) {
+  header .top-bar {
+    left: 50px;
+  }
+}
+@media only screen and (max-width:600px) {
+  header .top-bar {
+    left: 35px;
+  }
+}
+@media only screen and (max-width:400px) {
+  header .top-bar {
+    left: 25px;
+  }
+}

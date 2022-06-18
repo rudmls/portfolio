@@ -1,0 +1,19 @@
+<section class="competences-area" id="competences">
+  <div class="text-part">
+    <h1 className="test">Compétences</h1>
+
+    <div class="liste-categorie">
+      <div *ngFor="let i of skillsArray" class="categorie">
+        <h2>{{ i.name }}</h2>
+        <div *ngFor="let j of i.subSkills" class="sous-categorie">
+          <div>
+            <p>{{ j.name }}</p>
+          </div>
+          <div>
+            <p>{{ j.skills.join(', ') }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,211 @@
+.profile-area{
+    align-items: center;
+    padding: 60px 0 30px 0;
+}
+
+.profile-area .text-part{
+    flex-direction: column;
+    width: 85%;
+}
+
+.glob-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.intro{
+    width: 100%;
+    text-align: center;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.intro > p:nth-child(1){
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 14px;
+    // color: #222;
+    line-height: 1.2em;
+}
+
+.intro > p:nth-child(2){
+    padding: 15px 0;
+}
+
+.intro > p:nth-child(2) strong{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
+    // color: #222;
+}
+
+.intro > p:nth-child(3){
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+
+.projet{
+    width: 100%;
+    color: var(--text-color);
+}
+
+.projet p{
+    text-align: justify;
+    font-size: small;
+    font-weight: 200;
+}
+
+.profile-image{
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+
+.face-button {
+    opacity: 0.7;
+    // color: #464646;
+    $height: 50px;
+    $accentColor: #333;
+    width: 200px;
+    margin: 20px auto 0 auto;
+    height: $height;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: $accentColor;
+    overflow: hidden;
+
+    .face-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $accentColor;
+        color: rgba(255, 255, 255, 1);
+        height: $height;
+        transition: margin .4s;
+    }
+
+    .face-secondary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $height;
+        transition: margin .4s;
+        border: 2px solid $accentColor;
+    }
+
+    .face-primary svg, .face-secondary svg{
+        margin-right: 10px;
+    }
+
+    &:hover .face-primary {
+        margin-top: -$height;
+    }
+
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (min-width: 576px) {
+
+    .profile-image{
+        width: 40%;
+
+    }
+
+    .intro{
+        width: 70%;
+    }
+
+    .projet p{
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .glob-intro{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .profile-image{
+        width: 250px;
+        margin-bottom: 0px;
+    }
+
+    .profile-area .text-part{
+        max-width: 1000px;
+    }
+
+    .intro{
+        width: 50%;
+        padding-left: 30px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+    }
+
+    .intro > p:nth-child(1){
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+
+    .intro > p:nth-child(2){
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .intro > p:nth-child(2) strong{
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    .intro > p:nth-child(3){
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .intro > div .face-button{
+        margin-left: 0;
+    }
+
+    .face-primary{
+        font-size: 15px;
+    }
+
+    .projet{
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
