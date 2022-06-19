@@ -1,0 +1,43 @@
+<section class="diplomas-area" id="diplomas">
+    <div class="text-part">
+        <h1>Formations</h1>
+        <div class="col-twelve">
+            <div class="timeline-wrap">
+                <div *ngFor="let university of universities; let i = index" class="timeline-block">
+                    <div  class="timeline-ico">
+                        <fa-icon [icon]="faGraduationCap"></fa-icon>
+                    </div>
+                    <div class="timeline-header">
+                        <a href="{{ university.website }}" target="_blank" rel="noreferrer">{{ university.name }}</a>
+                        <p>{{ university.location }}</p>
+                    </div>
+                    <ng-container *ngFor="let diploma of university.diplomas; let j = index">
+                        <div class="timeline-content">
+                            <div (click)="handleClick(i.toString() + j.toString())" [ngClass]="collapsed[i.toString() + j.toString()] ? 'active' : ''">
+                                <div>
+                                    <h4>{{ diploma.name }}<dfn>{{ diploma.fullName }}</dfn></h4>
+                                    <p>{{ diploma.speciality }}</p>
+                                    <p>{{ diploma.year }}</p>
+                                </div>
+                                <button *ngIf="diploma.teaching.length > 0" [ngClass]="collapsed[i.toString() + j.toString()] ? 'show-detail active' : 'show-detail'">
+                                    <fa-icon [icon]="collapsed[i.toString() + j.toString()] ? faMinus : faPlus"></fa-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div *ngIf="diploma.teaching.length > 0" [ngClass]="collapsed[i.toString() + j.toString()] ? 'f-detail active' : 'f-detail'">
+                            <div>
+                                <p class="ens-title">Enseignements</p>
+                                <div>
+                                    <div *ngFor="let t of diploma.teaching">
+                                        <fa-icon [icon]="faCheck"></fa-icon>
+                                        <p>{{ t }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

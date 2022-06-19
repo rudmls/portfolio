@@ -1,0 +1,51 @@
+<section class="experiences-area" id="experiences">
+    <div class="text-part">
+        <h1>Expériences</h1>
+        <div class="experiences">
+            <div class="experiences-choice">
+                <div (click)="toggleItExperiences = true" [ngClass]="toggleItExperiences ? 'infos active' : 'infos'">
+                    <h2>IT</h2>
+                </div>
+
+                <div (click)="toggleItExperiences = false" [ngClass]="!toggleItExperiences ? 'divers active' : 'divers'">
+                    <h2>Divers</h2>
+                </div>
+            </div>
+        </div>
+        <!--    IT EXPERIENCES    -->
+        <div *ngIf="toggleItExperiences" class="experiences-informatiques">
+            <div *ngFor="let experience of itExperiences" class="ex-resume">
+                <span class="date">
+                    {{ experience.date }}
+                </span>
+                <h3>{{ experience.type }}</h3>
+                <h4>{{ experience.jobName }}</h4>
+                <div *ngFor="let sentence of experience.summary">
+                    <p>{{ sentence }}</p>
+                </div>
+                <div>
+                    <p>{{ experience.technologies.join(", ")}}</p>
+                </div>
+                <div class="ex-lieu">
+                    <span>{{ experience.company }}</span>
+                    <span>{{ experience.location }}</span>
+                </div>
+            </div>
+        </div>
+        <!--    VARIOUS EXPERIENCES    -->
+        <div *ngIf="!toggleItExperiences" class="experiences-divers">
+            <div *ngFor="let experience of variousExperiences" class="ex-resume">
+                <span class="date">
+                    {{ experience.date }}
+                </span>
+                <h3>{{ experience.jobName }}</h3>
+                <h4></h4>
+                <p>{{ experience.summary }}</p>
+                <div class="ex-lieu">
+                    <span>{{ experience.company }}</span>
+                    <span>{{ experience.location }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

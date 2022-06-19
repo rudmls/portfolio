@@ -8,6 +8,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--font-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e6061;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,7 +46,7 @@ body.dark-theme {
   --line-color : #333333;
 }
 
-.profile-area, .competences-area {
+.profile-area, .skills-area, .diplomas-area, .experiences-area, .contact-area {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;

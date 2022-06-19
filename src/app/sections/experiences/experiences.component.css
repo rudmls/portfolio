@@ -1,0 +1,172 @@
+
+.experiences-area{
+    background-color: #262626;
+    color: #fff;
+}
+
+.experiences{
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences-choice{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infos, .divers{
+    padding: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4)
+
+}
+
+.infos h2, .divers h2{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.infos h2:hover:after{
+    content: "";
+    display: block;
+    width: calc(0% - 60px);
+    position: absolute;
+    height: 2px;
+    background: #333;
+    transition: width 350ms ease-out;
+}
+
+.infos h2:hover, .divers h2:hover{
+    color: #c0ac93;
+}
+
+.infos.active, .divers.active{
+    color: #c0ac93;
+}
+
+
+.experiences-informatiques, .experiences-divers{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.ex-resume{
+    padding: 30px;
+    background: #333;
+    transition: .3s all ease;
+    border: 4px solid transparent;
+    margin-bottom: 10px;
+}
+
+.ex-resume .date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ex-resume .date svg {
+    font-size: 20px;
+    margin-right: 5px;
+
+}
+
+.ex-resume h3{
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+    color: #c0ac93;
+}
+
+.ex-resume h4{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    color: #EAEAEA;
+}
+
+.ex-resume p {
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.ex-resume > p:nth-last-child(2) {
+    margin-bottom: 1rem;
+}
+
+.ex-resume > div:not(:nth-last-child(1)){
+    display: flex;
+}
+
+.ex-resume > div:nth-last-child(2){
+    margin-top: 10px;
+    color: yellow;
+}
+
+.ex-resume > div svg{
+    margin-right: 10px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.ex-resume > div p{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ex-resume .ex-lieu span{
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: right;
+}
+
+.ex-resume .ex-lieu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+
+    .infos h2, .divers h2{
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .experiences-informatiques, .experiences-divers{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .experiences-choice .infos, .experiences-choice .divers{
+        font-size: 15px;
+    }
+
+    .experiences-informatiques, .experiences-divers{
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
