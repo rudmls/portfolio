@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-
+import {faCalendar, faCheck} from '@fortawesome/free-solid-svg-icons';
 @Component({
     selector: 'experiences-component',
     templateUrl: './experiences.component.html',
@@ -8,6 +8,8 @@ import {Component} from '@angular/core';
 
 export class ExperiencesComponent {
 
+    public faCalendar = faCalendar;
+    public faCheck = faCheck;
     public toggleItExperiences: boolean = true
 
     public itExperiences = [
@@ -25,11 +27,11 @@ export class ExperiencesComponent {
             ]
         },
         {
-            type : "Stage 1ère Année - M1 MIAGE IM",
+            type : "Stage",
             jobName : "Developpeur .NET",
             company : "Désirade",
             location : "Toulouse, France",
-            date : "Mai 2021 - Aujourd'hui",
+            date : "Mai 2021 - Août 2021",
             technologies : ['.NET', 'ASP.NET', 'C#', 'SQL Server', 'Apache SVN', 'Bootstrap'],
             summary : [
                 "Interventions de maintenance.",
@@ -40,7 +42,7 @@ export class ExperiencesComponent {
             ]
         },
         {
-            type : "Stage 2ème Année - BTS",
+            type : "Stage",
             jobName : "Developpeur",
             company : "Centre des finances public",
             location : "Cluny, Martinique",
@@ -52,7 +54,7 @@ export class ExperiencesComponent {
                 "Analyse fonctionnelle et technique des besoins utilisateurs."]
         },
         {
-            type : "Stage 1ère Année - BTS",
+            type : "Stage",
             jobName : "Développeur Web",
             company : "MPA Coaching",
             location : "Londres, Angleterre, Royaume-Uni",

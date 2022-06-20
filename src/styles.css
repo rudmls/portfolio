@@ -25,23 +25,28 @@ a {
 }
 
 :root {
+  --box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
   --font-color: #FFF;
+  --second-font-color: #dcd1c3;
   --first-color : #FFF;
   --first-hover-color : #F5F5F5;
   --second-color : #F5F5F5;
   --third-color : #333;
-  --text-color: #969ba1;
+  --text-color: #5e6061;
+  --text-color-hover: #5e6061;
+  --text-light-color: #F5F5F5;
   --text-hover-color: #262626;
   --line-color : #CCC;
 }
 
 body.dark-theme {
+  --box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
   --font-color: #202124;
   --first-color : #262626;
   --first-hover-color : #333;
-  --second-color : #333333;
+  --second-color : #303134;
   --third-color : #333333;
-  --text-color : hsla(0,0%,100%,.5);
+  --text-color : #bdc1c6;
   --text-hover-color: #464646;
   --line-color : #333333;
 }
@@ -57,8 +62,7 @@ body.dark-theme {
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
-  border-bottom: 1px solid var(--line-color);
-  background-color: var(--first-color);
+  background-color: var(--font-color);
 }
 
 .text-part{
@@ -72,11 +76,10 @@ body.dark-theme {
 }
 
 .text-part > h1{
-  font-size: 30px;
-  margin: 15px;
+  font-size: 25px;
   font-weight: 400;
   letter-spacing: 5px;
-  margin-bottom: 40px;
+  margin: 15px 15px 40px;
   text-transform: uppercase;
   color: var(--text-color);
 }

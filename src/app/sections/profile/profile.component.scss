@@ -85,7 +85,7 @@
     font-weight: 400;
     text-align: center;
     text-decoration: none;
-    color: $accentColor;
+    color: var(--text-color);
     overflow: hidden;
 
     .face-primary {

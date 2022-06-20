@@ -16,14 +16,17 @@
         <div *ngIf="toggleItExperiences" class="experiences-informatiques">
             <div *ngFor="let experience of itExperiences" class="ex-resume">
                 <span class="date">
+                    <fa-icon [icon]="faCalendar"></fa-icon>
                     {{ experience.date }}
                 </span>
                 <h3>{{ experience.type }}</h3>
                 <h4>{{ experience.jobName }}</h4>
                 <div *ngFor="let sentence of experience.summary">
+                    <fa-icon [icon]="faCheck"></fa-icon>
                     <p>{{ sentence }}</p>
                 </div>
                 <div>
+                    <i class='bx bxs-badge-check' ></i>
                     <p>{{ experience.technologies.join(", ")}}</p>
                 </div>
                 <div class="ex-lieu">
@@ -36,6 +39,7 @@
         <div *ngIf="!toggleItExperiences" class="experiences-divers">
             <div *ngFor="let experience of variousExperiences" class="ex-resume">
                 <span class="date">
+                    <fa-icon [icon]="faCalendar"></fa-icon>
                     {{ experience.date }}
                 </span>
                 <h3>{{ experience.jobName }}</h3>

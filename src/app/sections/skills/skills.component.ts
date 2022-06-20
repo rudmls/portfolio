@@ -10,61 +10,61 @@ export class SkillsComponent {
 
   public skillsArray: any[] = [
     {
-      name : "Language & Technologies",
+      name : "Conception & Développment",
       subSkills : [
         {
-          name : "Langages web",
-          skills : ['PHP', 'HTML', 'CSS', 'JavaScript']
-        },
-        {
           name : "Librairies & frameworks",
-          skills : ['.NET', 'ASP.NET', 'ReactJS', 'Bootstrap']
+          skills : ['Spring Boot', 'Angular', '.Net']
         },
         {
-          name : "Analyse de données",
-          skills : ["Python (Pandas, Numpy, Matplotlib)"]
+          name : "Serveur d'application",
+          skills : ["Tomcat"]
         },
         {
-          name : "Orienté objet",
-          skills : ["Java", "C#", "VB.NET"]
+          name : "SGBD",
+          skills : ["Oracle", "SQL Server", "MySQL"]
         },
         {
-          name : "Base de données",
-          skills : ["SQL", "PL/SQL", "Cypher"]
+          name : "ETL",
+          skills : ["Talend"]
         },
         {
-          name : "Shell",
-          skills : ["Bash"]
+          name : "Languages & Scripting",
+          skills : ["Java", "Bash", "Python"]
         }
       ]
     },
     {
-      name : "Logiciels",
+      name : "Infra & Cloud",
       subSkills : [
         {
-          name : "ETL",
-          skills : ["SSIS (SQL Server)"]
+          name : "Conteneurisation",
+          skills : ["Docker", "Docker Swarm"]
         },
         {
-          name : "SGBD Relationel",
-          skills : ["Oracle", "SQL Server", "MySQL", "MS Access"]
+          name : "Infra as code",
+          skills : ["Ansible"]
         },
         {
-          name : "SGBD NoSQL",
-          skills : ["Neo4j"]
+          name : "OS",
+          skills : ["Ubuntu", "RedHat"]
         },
         {
-          name : "IDE",
-          skills : ["Visual Studio", "Spyder", "Jupyter NoteBook", "Oracle SQL Developer"]
-        },
-        {
-          name : "Decisionnel",
-          skills : ["SAP Bunisess Objects (UDT, Web I)"]
+          name : "CI/CD",
+          skills : ["GitLab CI", "GitHub Action"]
         },
         {
           name : "Versionning",
           skills : ["Git", "Apache SVN"]
         },
+        {
+          name : "Monitoring & analyse",
+          skills : ["Sonar", "Prometheus", "Grafana"]
+        },
+        {
+          name : "Autres",
+          skills : ["Traefik", "Kafka"]
+        }
       ]
     },
     {
@@ -72,11 +72,11 @@ export class SkillsComponent {
       subSkills : [
         {
           name : "Gestion de projet",
-          skills : ["Travail en équipe", "Gestion des coûts", "Gestion des risques"]
+          skills : ["Travail en équipe"]
         },
         {
           name : "Méthode",
-          skills : ["Merise, Agile"]
+          skills : ["Merise", "Agile", "Scrum"]
         },
       ]
     },

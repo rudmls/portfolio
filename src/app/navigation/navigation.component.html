@@ -1,27 +1,13 @@
-<header>
-  <div class="row">
-    <div class="top-bar">
-      <a [ngClass]="toggle ? 'menu-toggle is-clicked' : 'menu-toggle'" class="menu-toggle" (click)="handleClick()">
-        <rmx-icon name="{{ toggle ? 'close-fill' : 'menu-4-fill' }}"></rmx-icon>
-      </a>
-
-      <div class="logo">
-        <a href="index.html">Portfolio</a>
-      </div>
-
-      <nav [ngClass]="toggle ? 'main-nav-wrap active' : 'main-nav-wrap'">
-        <ul  class="main-navigation">
-          <li class="current"><a class="smoothscroll"  href="#profile" title="">Profile</a></li>
-          <li><a class="smoothscroll"  href="#skills" title="">Compétences</a></li>
-          <li><a class="smoothscroll"  href="#diplomas" title="">Formations</a></li>
-          <li><a class="smoothscroll"  href="#experiences" title="">Expériences</a></li>
-          <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-        </ul>
-        <div class="theme-switch">
-          <rmx-icon (click)="switchMode()" name="{{ darkMode ? 'toggle-line' : 'toggle-fill' }}"></rmx-icon>
-        </div>
-      </nav>
+<nav [ngClass]="stickyNavBar ? 'NavbarItems sticky' : 'NavbarItems'" class="NavbarItems" >
+    <div (click)="handleClick()" class="menu-icon">
+        <rmx-icon name="{{ activeMenu ? 'close-fill' : 'menu-4-fill' }}"></rmx-icon>
     </div>
-
-  </div>
-</header>
+    <ul id="nav-menu" [ngClass]="activeMenu ? 'nav-menu active' : 'nav-menu'">
+        <li *ngFor="let item of menuItems">
+            <a class="nav-links" (click)="handleClick()" [href]="item.url">{{ item.title }}</a>
+        </li>
+        <div class="theme-switch">
+            <rmx-icon (click)="switchMode()" name="{{ darkMode ? 'toggle-line' : 'toggle-fill' }}"></rmx-icon>
+        </div>
+    </ul>
+</nav>

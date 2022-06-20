@@ -1,8 +1,8 @@
 
-.experiences-area{
-    background-color: #262626;
-    color: #fff;
-}
+/*.experiences-area{*/
+/*    background-color: #262626;*/
+/*    color: #fff;*/
+/*}*/
 
 .experiences{
     display: flex;
@@ -20,16 +20,15 @@
 
 .infos, .divers{
     padding: 5px;
-    padding: 10px 5px;
     text-align: center;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4)
+    color: var(--text-color);
 
 }
 
 .infos h2, .divers h2{
     font-size: 15px;
-    font-weight: 400;
+    /*font-weight: 400;*/
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -65,10 +64,13 @@
 
 .ex-resume{
     padding: 30px;
-    background: #333;
+    background: var(--second-color);
+    /*box-shadow: 0 1px 4px rgb(146 161 176 / 20%);*/
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
     transition: .3s all ease;
     border: 4px solid transparent;
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 
 .ex-resume .date {
@@ -76,33 +78,32 @@
     align-items: center;
     margin-bottom: 10px;
     font-size: 12px;
-    font-weight: 700;
-    color: #fff;
+    /*font-weight: 700;*/
 }
 
-.ex-resume .date svg {
-    font-size: 20px;
-    margin-right: 5px;
+.ex-resume .date fa-icon {
+    font-size: 15px;
+    margin-right: 7px;
 
 }
 
 .ex-resume h3{
     font-size: 15px;
+    font-weight: 500;
     margin-bottom: 0.5rem;
-    font-weight: 200;
-    color: #c0ac93;
 }
 
 .ex-resume h4{
     font-size: 18px;
     margin-bottom: 1rem;
-    font-weight: 200;
-    color: #EAEAEA;
+    /*font-weight: 200;*/
+    /*color: #EAEAEA;*/
 }
 
 .ex-resume p {
-    font-weight: 200;
-    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+    /*font-weight: 200;*/
+    /*color: rgba(255, 255, 255, 0.4);*/
 }
 
 .ex-resume > p:nth-last-child(2) {
@@ -115,13 +116,24 @@
 
 .ex-resume > div:nth-last-child(2){
     margin-top: 10px;
-    color: yellow;
 }
 
-.ex-resume > div svg{
+.ex-resume > div fa-icon {
     margin-right: 10px;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+.ex-resume > div i {
+    margin-right: 10px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
 }
 
 .ex-resume > div p{
@@ -130,8 +142,8 @@
 }
 
 .ex-resume .ex-lieu span{
-    color: rgba(255, 255, 255, 0.3);
-    font-weight: 400;
+    /*color: rgba(255, 255, 255, 0.3);*/
+    /*font-weight: 400;*/
     font-size: 13px;
     text-align: right;
 }

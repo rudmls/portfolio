@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
+import { IconModule } from '@ant-design/icons-angular';
 import {AppComponent} from './app.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {ProfileComponent} from './sections/profile/profile.component';
@@ -20,6 +20,8 @@ import {
     RemixIconModule
 } from "angular-remix-icon";
 
+
+
 const icons = {
     RiToggleFill, RiToggleLine, RiMoonLine, RiMoonFill, RiMenu4Fill, RiCloseFill
 };
@@ -37,6 +39,7 @@ const icons = {
     ],
     imports: [
         BrowserModule,
+        IconModule,
         FontAwesomeModule,
         RemixIconModule.configure(icons),
     ],

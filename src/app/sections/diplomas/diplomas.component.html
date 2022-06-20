@@ -20,7 +20,7 @@
                                     <p>{{ diploma.year }}</p>
                                 </div>
                                 <button *ngIf="diploma.teaching.length > 0" [ngClass]="collapsed[i.toString() + j.toString()] ? 'show-detail active' : 'show-detail'">
-                                    <fa-icon [icon]="collapsed[i.toString() + j.toString()] ? faMinus : faPlus"></fa-icon>
+                                    <i [ngClass]="collapsed[i.toString() + j.toString()] ? 'bx bx-minus' : 'bx bx-plus'"></i>
                                 </button>
                             </div>
                         </div>
