@@ -9,15 +9,25 @@ import { HostListener } from '@angular/core';
 
 export class NavigationComponent {
 
+    constructor() {
+        this.setThemePreference();
+    }
+
     public stickyNavBar: boolean = false
+    public activeMenu: boolean = false;
+    public darkMode: boolean = true;
+
+    public setThemePreference(): void {
+        let currentHour = new Date().getHours();
+        if(currentHour >= 18 || currentHour <= 6) {
+            document.body.classList.toggle("dark-theme")
+        }
+    }
 
     @HostListener('window:scroll', ['$event.target']) onScrollEvent(event: any) {
         let scroll = event.scrollingElement.scrollTop;
         this.stickyNavBar = scroll > 20;
     }
-
-    public activeMenu: boolean = false;
-    public darkMode: boolean = true;
 
     public handleClick(): void {
         this.activeMenu = !this.activeMenu;
