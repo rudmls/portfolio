@@ -17,7 +17,7 @@ export class NavigationComponent {
     }
 
     public activeMenu: boolean = false;
-    public darkMode: boolean = false;
+    public darkMode: boolean = true;
 
     public handleClick(): void {
         this.activeMenu = !this.activeMenu;
