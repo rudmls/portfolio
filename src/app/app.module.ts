@@ -9,6 +9,7 @@ import {DiplomasComponent} from './sections/diplomas/diplomas.component';
 import {ExperiencesComponent} from './sections/experiences/experiences.component';
 import {SkillsComponent} from './sections/skills/skills.component';
 import {ContactComponent} from './sections/contact/contact.component';
+import {FooterComponent} from './footer/footer.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {
     RiToggleFill,
@@ -35,7 +36,8 @@ const icons = {
         SkillsComponent,
         DiplomasComponent,
         ExperiencesComponent,
-        ContactComponent
+        ContactComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
