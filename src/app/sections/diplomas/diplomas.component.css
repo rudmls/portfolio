@@ -81,44 +81,6 @@
     padding-bottom: 0;
 }
 
-.new:before {
-    content: "";
-    z-index: -1;
-    overflow: hidden;
-    transform: rotate(-135deg);
-    width: 120px;
-    display: block;
-    background: #79A70A;
-    background: linear-gradient(#333333 0%, #333333 100%);
-    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 34px;
-    right: -16px;
-    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px);
-    height: 20px;
-    width: 120px;
-}
-.new:after {
-    content: "Alternance";
-    overflow: hidden;
-    font-size: 9px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 20px;
-    transform: rotate(45deg);
-    width: 120px;
-    display: block;
-    background: #79A70A;
-    background: linear-gradient(#575757 0%, #464646 100%);
-    box-shadow: 0 3px 10px -5px rgb(0, 0, 0);
-    position: absolute;
-    top: 20px;
-    right: -30px;
-    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px, 110px 30px);
-}
-
 .timeline-content > div{
     display: flex;
     align-items: center;
@@ -181,7 +143,6 @@
 .f-detail{
     display: block;
     max-height: 0;
-    transition: 1s ;
     overflow: hidden;
     padding-left: 3rem;
     margin-top: 5px;

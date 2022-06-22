@@ -10,14 +10,14 @@ export class SkillsComponent {
 
   public skillsArray: any[] = [
     {
-      name : "Conception & Développment",
+      name : "Conception & Développement",
       subSkills : [
         {
           name : "Librairies & frameworks",
           skills : ['Spring Boot', 'Angular', '.Net']
         },
         {
-          name : "Serveur d'application",
+          name : "Serveurs d'applications",
           skills : ["Tomcat"]
         },
         {
