@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
-  "homepage": "https://ruddymonlouis.fr",
+  "homepage": "https://portfolio.ruddymonlouis.fr",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
